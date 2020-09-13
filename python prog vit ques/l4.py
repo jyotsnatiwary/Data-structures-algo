@@ -1,0 +1,25 @@
+c=range(1,10,2)
+print(c)
+a=[2,1,5,3]
+print(len(a))
+a.append(10)
+print(a)
+##(a[2]).append(20)
+##print(a)
+a.sort()
+print(a)
+a[1]=11
+print(a)
+a[2]='a'
+print(a)
+a[2]=5
+print(a)
+del a[2]
+print(a)
+a=(2,3,4,5)
+print(a)
+b=('ac','fg','rs')
+print(b)
+print(a.index(4))
+d={1,2,4,5,}
+print(d)
