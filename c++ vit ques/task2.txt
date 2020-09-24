@@ -1,0 +1,74 @@
+                       #include <iostream>
+	using namespace std;
+	int main()
+	{
+		int arr[20],i,diff,temp,j,src,flag;
+		flag=0;
+		cout<<"Give 20 elements for an array \n";
+			for(i=0;i<20;i++)
+			{
+				cin>>arr[i];
+			}
+			for(i=0 ;i<19;i++)
+			{
+				for(j=i+1;j<20;j++)
+				{
+				
+				diff= arr[i]-arr[j];
+				if(diff<=0)
+				{
+					
+				}
+				else
+				{
+					temp =arr[i];
+					arr[i]=arr[j];
+					arr[j]=temp;				
+				}
+			}}
+			cout<<"THE OUTPUT IN ACCENDING ORDER \n";
+		for(i=0;i<20;i++)
+			{
+				cout<<arr[i]<<"\n";
+				
+			}
+		cout<<"Element that has to be searched \n";
+		cin>>src;
+		temp = src-arr[9];
+		if(temp<0)
+		{
+			for(i=0;i<9;i++)
+			{
+				if(src==arr[i])
+				{
+					cout<<"location is at \n"<<i+1;
+					flag++;
+				}		
+			
+			}
+		}
+		else if(temp>0)
+		{
+			for(i=10;i<20;i++)
+			{
+				if(src==arr[i])
+				{
+					cout<<"location is at \n"<<i+1;
+					flag++;
+				}
+				
+			}
+			
+		}
+		else if(temp==0)
+		{
+			cout<<"location is at \n"<<i+1;
+			flag++;
+		}
+		if(flag==0)
+		{
+			cout<<"Number searched doesn't exist!!";
+		}
+		
+		
+	}

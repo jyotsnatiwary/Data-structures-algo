@@ -1,0 +1,35 @@
+#include <iostream>
+#include <iostream>
+using namespace std;
+int main()
+{
+	int ar[20],i,diff,temp,j;
+	cout<<"Input 20 elements for an array \n";
+		for(i=0;i<20;i++)
+		{
+			cin>>ar[i];
+		}
+		for(i=0 ;i<19;i++)
+		{
+			for(j=i+1;j<20;j++)
+			{
+			
+			diff= ar[i]-ar[j];
+			if(diff<=0)
+			{
+				
+			}
+			else
+			{
+				temp =ar[i];
+				ar[i]=ar[j];
+				ar[j]=temp;				
+			}
+		}}
+		cout<<"THE OUTPUT IN ACCENDING ORDER \n";
+	for(i=0;i<20;i++)
+		{
+			cout<<ar[i]<<"\n";
+			
+		}
+}
